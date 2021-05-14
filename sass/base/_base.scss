@@ -1,0 +1,30 @@
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+img {
+  vertical-align: middle;
+}
+
+body {
+  font-family: 'Livvic', sans-serif;
+  background-color: $color-green-56;
+  color: $color-white;
+}
+
+.container {
+  max-width: 114rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 1.5rem;
+}

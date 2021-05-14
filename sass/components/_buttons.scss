@@ -1,0 +1,17 @@
+.btn {
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: $color-white;
+  border-radius: $border-radius;
+  border: 2px solid $color-white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 1rem 3.3rem;
+  outline: none;
+
+  &--dark {
+    color: $color-green-34;
+    border-color: $color-green-34;
+  }
+}

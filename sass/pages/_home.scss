@@ -1,0 +1,37 @@
+// *****************************
+// ********Talent section*******
+// *****************************
+
+.talent {
+  padding-top: 7.3rem;
+  padding-bottom: 25rem;
+
+  background-image: url(../images/header-img-1.png), url(../images/header-img-2.png);
+  background-size: 20rem 20rem, 35.8rem 10rem;
+  background-position: left -10rem center, right 16.5rem bottom 0rem;
+  background-repeat: no-repeat;
+}
+
+.talent-info {
+  margin-top: 12.9rem;
+  display: flex;
+  align-items: center;
+}
+
+.talent__text {
+  margin-left: auto;
+  width: 44.5rem;
+  font-weight: 600;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    @include baElements(5rem, 0.4rem) {
+      background-color: $color-light-blue;
+      margin-bottom: 7.9rem;
+    }
+  }
+}

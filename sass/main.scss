@@ -1,0 +1,28 @@
+// ABSTRACTS
+@import '../sass/abstracts/variables';
+@import '../sass/abstracts/mixins';
+@import '../sass/abstracts/utils';
+
+// BASE
+@import '../sass/base/base';
+@import '../sass/base/normalize';
+@import '../sass/base/typography';
+
+// COMPONENTS
+@import '../sass/components/buttons';
+@import '../sass/components/card';
+@import '../sass/components/dropdown';
+
+// LAYOUT
+@import '../sass/layout/header';
+@import '../sass/layout/navigation';
+@import '../sass/layout/forms';
+@import '../sass/layout/footer';
+
+// PAGES
+@import '../sass/pages/home';
+@import '../sass/pages/about';
+@import '../sass/pages/contact';
+
+
+

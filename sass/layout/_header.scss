@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  align-items: center;
+
+  &-list {
+    margin-left: 8rem;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+    }
+  }
+}
