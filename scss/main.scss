@@ -1,0 +1,215 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+// VARIABLES
+
+$border-radius: 24px;
+// Primary colors
+
+$color-white: #fff;
+$color-coral: #f67e7e;
+
+// Blue colors
+
+$color-light-blue: #79c8c7;
+$color-dark-blue: #2c6269;
+
+// Green colors. Numbers indicate that these green colors are hex's last two digits
+
+$color-green-56: #014e56;
+$color-green-47: #004047;
+$color-green-34: #012f34;
+$color-green-96: #002529;
+
+
+
+/* livvic-500 - latin */
+@font-face {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/livvic-v8-latin-500.eot');
+  /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/livvic-v8-latin-500.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/livvic-v8-latin-500.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/livvic-v8-latin-500.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/livvic-v8-latin-500.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/livvic-v8-latin-500.svg#Livvic') format('svg');
+  /* Legacy iOS */
+}
+
+/* livvic-600 - latin */
+@font-face {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/livvic-v8-latin-600.eot');
+  /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/livvic-v8-latin-600.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/livvic-v8-latin-600.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/livvic-v8-latin-600.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/livvic-v8-latin-600.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/livvic-v8-latin-600.svg#Livvic') format('svg');
+  /* Legacy iOS */
+}
+
+/* livvic-700 - latin */
+@font-face {
+  font-family: 'Livvic';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/livvic-v8-latin-700.eot');
+  /* IE9 Compat Modes */
+  src: local(''),
+    url('../fonts/livvic-v8-latin-700.eot?#iefix') format('embedded-opentype'),
+    /* IE6-IE8 */
+    url('../fonts/livvic-v8-latin-700.woff2') format('woff2'),
+    /* Super Modern Browsers */
+    url('../fonts/livvic-v8-latin-700.woff') format('woff'),
+    /* Modern Browsers */
+    url('../fonts/livvic-v8-latin-700.ttf') format('truetype'),
+    /* Safari, Android, iOS */
+    url('../fonts/livvic-v8-latin-700.svg#Livvic') format('svg');
+  /* Legacy iOS */
+}
+
+// MIXINS
+@mixin baElements($w, $h) {
+  content: "";
+  display: inline-block;
+  width: $w;
+  height: $h;
+  @content;
+}
+
+// UTILITY CLASSES
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+// COMPONENTS
+
+body {
+  font-family: 'Livvic', sans-serif;
+  background-color: $color-green-56;
+  color: $color-white;
+}
+
+.container {
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+.btn {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: $color-white;
+  border-radius: $border-radius;
+  border: 2px solid $color-white;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 33px;
+  outline: none;
+
+  &--dark {
+    color: $color-green-34;
+    border-color: $color-green-34;
+  }
+}
+
+
+// HEADER
+
+.header {
+  display: flex;
+  align-items: center;
+
+  &-list {
+    margin-left: 80px;
+
+    &__item {
+      &:not(:last-child) {
+        margin-right: 40px;
+      }
+    }
+  }
+}
+
+.list {
+  display: flex;
+  list-style: none;
+
+  &__link {
+    text-decoration: none;
+    color: $color-white;
+  }
+}
+
+.talent {
+  padding-top: 73px;
+  padding-bottom: 250px;
+
+  background-image: url(../images/header-img-1.png), url(../images/header-img-2.png);
+  background-size: 200px 200px, 358px 100px;
+  background-position: left -100px center, right 165px bottom 0px;
+  background-repeat: no-repeat;
+}
+
+.talent-info {
+  margin-top: 129px;
+  display: flex;
+  align-items: center;
+}
+
+.talent-heading {
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 100px;
+  color: $color-white;
+  width: 610px;
+
+  &__text {
+    color: $color-coral;
+  }
+}
+
+.talent__text {
+  margin-left: auto;
+  width: 445px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: $color-white;
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    @include baElements(50px, 4px) {
+      background-color: $color-light-blue;
+      margin-bottom: 79px;
+    }
+  }
+}
