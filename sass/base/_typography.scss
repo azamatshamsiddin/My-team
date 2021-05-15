@@ -5,10 +5,22 @@
   font-weight: 500;
   font-display: swap;
   src: local(''),
-    url('../fonts/livvic-v8-latin-500.woff2') format('woff2'),
+    url('../../fonts/livvic-v8-latin-500.woff2') format('woff2'),
     /* Super Modern Browsers */
-    url('../fonts/livvic-v8-latin-500.woff') format('woff'),
+    url('../../fonts/livvic-v8-latin-500.woff') format('woff'),
     /* Modern Browsers */
+}
+
+/* livvic-500italic - latin */
+@font-face {
+  font-family: 'Livvic';
+  font-style: italic;
+  font-weight: 500;
+  src: local(''),
+    url('../../fonts/livvic-v8-latin-500italic.woff2') format('woff2'),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../../fonts/livvic-v8-latin-500italic.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* livvic-600 - latin */
@@ -18,9 +30,9 @@
   font-weight: 600;
   font-display: swap;
   src: local(''),
-    url('../fonts/livvic-v8-latin-600.woff2') format('woff2'),
+    url('../../fonts/livvic-v8-latin-600.woff2') format('woff2'),
     /* Super Modern Browsers */
-    url('../fonts/livvic-v8-latin-600.woff') format('woff'),
+    url('../../fonts/livvic-v8-latin-600.woff') format('woff'),
     /* Modern Browsers */
 }
 
@@ -31,13 +43,13 @@
   font-weight: 700;
   font-display: swap;
   src: local(''),
-    url('../fonts/livvic-v8-latin-700.woff2') format('woff2'),
+    url('../../fonts/livvic-v8-latin-700.woff2') format('woff2'),
     /* Super Modern Browsers */
-    url('../fonts/livvic-v8-latin-700.woff') format('woff'),
+    url('../../fonts/livvic-v8-latin-700.woff') format('woff'),
     /* Modern Browsers */
 }
 
-html{
+html {
   font-size: 62.5%; // 16px * 62.5% = 10px
 }
 
