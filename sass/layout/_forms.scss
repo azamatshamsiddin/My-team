@@ -1,0 +1,68 @@
+.form {
+  width: 54rem;
+
+  &__input {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $color-white;
+    padding-left: 1.4rem;
+    padding-bottom: 1.6rem;
+    margin-bottom: 2.4rem;
+    color: $color-white;
+    background-color: transparent;
+    outline: none;
+
+    &:focus {
+      border-bottom-color: $color-light-blue;
+    }
+
+    &::placeholder {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: -0.115385px;
+      color: #FFFFFF;
+      opacity: 0.6;
+    }
+  }
+
+  &__textarea {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    min-height: 8.4rem;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $color-white;
+    padding-left: 1.4rem;
+    margin-bottom: 2.4rem;
+    color: $color-white;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+
+    &:focus {
+      border-bottom-color: $color-light-blue;
+    }
+
+    &::placeholder {
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 25px;
+      letter-spacing: -0.115385px;
+      color: #FFFFFF;
+      opacity: 0.6;
+    }
+  }
+
+  &-btn {
+    cursor: pointer;
+  }
+}
