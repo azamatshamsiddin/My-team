@@ -1,0 +1,100 @@
+.about {
+  padding: 7.3rem 0 12rem 0;
+  background-image: url(../../images/about-page/about-bg-img.png);
+  background-repeat: no-repeat;
+  background-size: 20rem 20rem;
+  background-position: right -10rem bottom;
+
+  &__text {
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    max-width: 73rem;
+
+    display: flex;
+    flex-direction: column;
+
+    &::before {
+      @include baElements(5rem, 0.4rem);
+      background-color: $color-coral;
+      margin-bottom: 4rem;
+    }
+  }
+}
+
+.about-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 12rem;
+}
+
+.about-heading {
+  font-weight: bold;
+  font-size: 6.4rem;
+  line-height: 10rem;
+}
+
+
+
+// **************************
+// ****DIRECTORS SECTION*****
+// **************************
+.directors {
+  padding: 14rem 0;
+  background-color: $color-green-47;
+  background-image: url(../../images/about-page/directors-bg1.png), url(../../images/home-page/success-bg-img1.png);
+  background-size: 20rem 20rem, 14.7rem 10rem;
+  background-repeat: no-repeat;
+  background-position: left -10rem top, right bottom;
+}
+
+// .directors-info {
+
+// }
+
+.directors-heading {
+  margin-bottom: 6.4rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.card {
+  padding: 2.4rem 3.2rem;
+  margin-bottom: 7.6rem;
+  text-align: center;
+  background-color: $color-green-34;
+
+  display: flex;
+  flex-direction: column;
+  flex-basis: 35rem;
+
+
+  &__img {
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  &__author-name {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    color: $color-light-blue;
+    margin-top: 1.6rem;
+  }
+
+  &__author-job {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+}
+
+
+// **************************
+// *****CLIENTS SECTION******
+// **************************

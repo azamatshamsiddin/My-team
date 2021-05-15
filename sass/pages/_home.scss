@@ -6,7 +6,7 @@
   padding-top: 7.3rem;
   padding-bottom: 25rem;
 
-  background-image: url(../images/header-img-1.png), url(../images/header-img-2.png);
+  background-image: url(../images/home-page/header-img-1.png), url(../images/home-page/header-img-2.png);
   background-size: 20rem 20rem, 35.8rem 10rem;
   background-position: left -10rem center, right 16.5rem bottom 0rem;
   background-repeat: no-repeat;
@@ -43,8 +43,8 @@
 
 .features {
   background-color: $color-green-34;
-  padding: 14rem 16.5rem;
-  background-image: url(/images/feature-bg-img.png);
+  padding: 14rem 0;
+  background-image: url(../../images/home-page/feature-bg-img.png);
   background-repeat: no-repeat;
   background-position: right -10rem bottom;
 }
@@ -93,15 +93,15 @@
   }
 
   &:nth-child(1)::before {
-    background-image: url(/images/feature-img-1.svg);
+    background-image: url(../../images/home-page/feature-img-1.svg);
   }
 
   &:nth-child(2)::before {
-    background-image: url(/images/feature-img-2.svg);
+    background-image: url(../../images/home-page/feature-img-2.svg);
   }
 
   &:nth-child(3)::before {
-    background-image: url(/images/feature-img-3.svg);
+    background-image: url(../../images/home-page/feature-img-3.svg);
   }
 
   &__heading {
@@ -132,9 +132,9 @@
 }
 
 .successes {
-  padding: 14rem 16.5rem;
+  padding: 14rem 0;
   background-color: $color-green-47;
-  background-image: url(../../images/success-bg-img1.png), url(../../images/success-bg-img2.png);
+  background-image: url(../../images/home-page/success-bg-img1.png), url(../../images/home-page/success-bg-img2.png);
   background-repeat: no-repeat;
   background-position: left top, right bottom -10rem;
 }
@@ -163,7 +163,7 @@
 
   &::before {
     @include baElements(6.7rem, 5.6rem);
-    background-image: url(../../images/quote-icon.svg);
+    background-image: url(../../images/home-page/quote-icon.svg);
     background-repeat: no-repeat;
     background-size: contain;
     margin: 0 auto;
@@ -209,7 +209,7 @@
   padding: 76px 0;
   color: $color-green-34;
   background-color: $color-coral;
-  background-image: url(../../images/contact-us-img.png);
+  background-image: url(../../images/home-page/contact-us-img.png);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left bottom -9rem;
