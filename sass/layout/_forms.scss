@@ -1,12 +1,12 @@
 .form {
-  width: 54rem;
+  max-width: 54rem;
 
   &__input {
     font-weight: 600;
     font-size: 15px;
     line-height: 25px;
     letter-spacing: -0.115385px;
-    display: block;
+    display: inline-block;
     width: 100%;
     border: none;
     border-bottom: 1px solid $color-white;

@@ -73,11 +73,13 @@
   display: flex;
   flex-direction: column;
   flex-basis: 35rem;
+  min-height: 25.3rem;
 
 
   &__img {
     object-fit: contain;
     margin: 0 auto;
+    margin-bottom: 1.6rem;
   }
 
   &__author-name {
@@ -85,7 +87,6 @@
     font-size: 1.8rem;
     line-height: 2.8rem;
     color: $color-light-blue;
-    margin-top: 1.6rem;
   }
 
   &__author-job {
@@ -93,7 +94,7 @@
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 2.5rem;
-    margin-bottom: 2.8rem;
+    margin-bottom: 3.4rem;
   }
 }
 

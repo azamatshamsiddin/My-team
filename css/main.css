@@ -494,7 +494,7 @@ html {
 }
 
 .form {
-  width: 54rem;
+  max-width: 54rem;
 }
 
 .form__input {
@@ -502,7 +502,7 @@ html {
   font-size: 15px;
   line-height: 25px;
   letter-spacing: -0.115385px;
-  display: block;
+  display: inline-block;
   width: 100%;
   border: none;
   border-bottom: 1px solid #fff;
@@ -587,6 +587,11 @@ html {
 .footer-inner {
   display: flex;
   align-items: flex-start;
+  justify-content: space-between;
+}
+
+.footer-left {
+  display: flex;
 }
 
 .footer-list {
@@ -599,10 +604,6 @@ html {
 
 .footer-address {
   margin-left: 12.5rem;
-}
-
-.footer-right {
-  max-width: 25.5rem;
 }
 
 .social {
@@ -622,6 +623,55 @@ html {
 
 .social__link:not(:last-child) {
   margin-right: 1.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    padding: 5.6rem 0;
+  }
+  .footer-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .footer-logo .logo__img {
+    width: 9.6rem;
+    height: 2.4rem;
+  }
+  .footer-list__item:not(:last-child) {
+    margin-right: 2.4rem;
+  }
+  .footer-list__link {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .footer-left {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3.2rem;
+  }
+  .footer-menu {
+    max-width: 10.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .footer-address {
+    text-align: right;
+  }
+  .footer-right {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .social {
+    text-align: unset;
+    margin-bottom: 0;
+  }
+  .copyright {
+    text-align: right;
+  }
 }
 
 .talent {
@@ -908,11 +958,13 @@ html {
   display: flex;
   flex-direction: column;
   flex-basis: 35rem;
+  min-height: 25.3rem;
 }
 
 .card__img {
   object-fit: contain;
   margin: 0 auto;
+  margin-bottom: 1.6rem;
 }
 
 .card__author-name {
@@ -920,7 +972,6 @@ html {
   font-size: 1.8rem;
   line-height: 2.8rem;
   color: #79c8c7;
-  margin-top: 1.6rem;
 }
 
 .card__author-job {
@@ -928,7 +979,7 @@ html {
   font-weight: 500;
   font-size: 1.5rem;
   line-height: 2.5rem;
-  margin-bottom: 2.8rem;
+  margin-bottom: 3.4rem;
 }
 
 .comment {
@@ -1086,5 +1137,247 @@ html {
   font-size: 1.8rem;
   line-height: 2.8rem;
   margin-left: 2.3rem;
+}
+
+@media only screen and (max-width: 1320px) {
+  .talent {
+    background-image: none, url(../images/home-page/header-img-2.png);
+  }
+  .contact-content {
+    background-image: none, url(../../images/contact-page/contact-bg2.png);
+  }
+}
+
+@media only screen and (max-width: 1240px) {
+  .features {
+    background-position: right -10rem top;
+  }
+}
+
+@media only screen and (max-width: 1140px) {
+  .container {
+    padding: 0 4rem;
+  }
+  .feedback-author {
+    flex-basis: 30rem;
+  }
+  .cards {
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 1010px) {
+  html {
+    font-size: 60.5%;
+  }
+  .successes {
+    background-position: left top, right bottom -11rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 58.5%;
+  }
+}
+
+@media only screen and (max-width: 975px) {
+  .section-heading {
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+  }
+  .talent-heading {
+    font-size: 9rem;
+    line-height: 9rem;
+  }
+  .features__heading {
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+    max-width: 44rem;
+  }
+  .about__text {
+    max-width: 62rem;
+  }
+}
+
+@media only screen and (max-width: 935px) {
+  .feedbacks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .feedback-author {
+    max-width: 50rem;
+    margin-bottom: 2rem;
+  }
+  .feedback-author__job {
+    margin-bottom: 2rem;
+  }
+  .clients-logo__img {
+    width: 15rem;
+    object-fit: contain;
+    height: 4rem;
+  }
+}
+
+@media only screen and (max-width: 825px) {
+  .about__text {
+    max-width: 52rem;
+  }
+  .clients-logo__img {
+    width: 13.5rem;
+    height: 3.5rem;
+  }
+  .contact-left {
+    max-width: 35rem;
+  }
+  .form {
+    max-width: 40rem;
+    background-image: none, inherit;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .talent {
+    background-position: bottom;
+  }
+  .talent-info {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 11rem;
+  }
+  .talent-heading {
+    font-size: 6.4rem;
+    line-height: 5.6rem;
+    max-width: 39rem;
+    margin: 0;
+    margin-bottom: 2.4rem;
+  }
+  .talent__text {
+    margin: 0 auto;
+    width: 55rem;
+  }
+  .talent__text::before {
+    display: none;
+  }
+  .features {
+    padding: 10rem 5.8rem;
+  }
+  .features__heading {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    margin-bottom: 6.4rem;
+  }
+  .features-info {
+    flex-direction: column;
+    padding-top: 3.2rem;
+  }
+  .feature-types {
+    margin-left: 9rem;
+  }
+  .section-heading {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+  .successes {
+    padding: 10rem 5.8rem;
+  }
+  .success-heading {
+    margin-bottom: 4.8rem;
+    max-width: 47rem;
+  }
+  .feedback-author {
+    max-width: 57rem;
+    margin-bottom: 0;
+  }
+  .feedback-author__text {
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+  }
+  .feedback-author__name {
+    margin-top: 1.6rem;
+    margin-bottom: 2px;
+  }
+  .feedback-author__job {
+    margin-bottom: 1.6rem;
+  }
+  .about-info {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 11rem;
+  }
+  .about-heading {
+    font-size: 6.4rem;
+    line-height: 5.6rem;
+    margin-bottom: 2.4rem;
+  }
+  .about__text {
+    max-width: 45rem;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+  .about__text::before {
+    display: none;
+  }
+  .card {
+    flex-basis: 28rem;
+  }
+  .comment {
+    padding: 3.5rem 2.4rem;
+  }
+  .clients-logo__img {
+    width: 11rem;
+    height: 3rem;
+  }
+  .contact-inner {
+    padding-bottom: 12rem;
+    margin-top: 12rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .contact-hero {
+    padding-top: 7.3rem;
+  }
+  .contact-content {
+    background-image: url(../../images/directors-bg1.png), url(../../images/contact-page/contact-bg2.png);
+  }
+  .contact-inner {
+    padding-bottom: 11rem;
+    margin-top: 11rem;
+    justify-content: space-between;
+  }
+  .contact-left {
+    text-align: center;
+    max-width: 51.5rem;
+  }
+  .contact-left__heading {
+    line-height: 5.6rem;
+  }
+  .contact-left__subtitle {
+    margin-top: 2.4rem;
+  }
+  .question {
+    display: flex;
+    align-items: center;
+    margin-top: 2.4rem;
+  }
+  .question__text {
+    font-weight: bold;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    margin-left: 2.3rem;
+  }
+  .form {
+    max-width: 51rem;
+    margin-top: 6.4rem;
+  }
 }
 /*# sourceMappingURL=main.css.map */
