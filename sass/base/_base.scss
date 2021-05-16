@@ -28,3 +28,9 @@ body {
   margin-right: auto;
   padding: 0 1.5rem;
 }
+
+@media only screen and(max-width: 1140px) {
+  .container {
+    padding: 0 4rem;
+  }
+}

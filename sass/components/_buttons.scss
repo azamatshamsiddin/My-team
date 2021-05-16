@@ -30,3 +30,34 @@
     background-color: $color-white;
   }
 }
+
+.add-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background-color: $color-coral;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-bottom: -5.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+  transition: all .3s ease-in;
+
+  &:hover {
+    background-color: $color-light-blue;
+  }
+
+  &::before {
+    @include baElements(0.4rem, 1.6rem);
+    background-color: $color-green-34;
+    position: absolute;
+    transform: rotate(90deg);
+  }
+
+  &::after {
+    @include baElements(0.4rem, 1.6rem);
+    background-color: $color-green-34;
+  }
+}

@@ -64,3 +64,39 @@ html {
     color: $color-coral;
   }
 }
+
+.section-heading {
+  font-size: 4.8rem;
+  line-height: 4.8rem;
+  text-align: center;
+}
+
+@media only screen and(max-width: 1010px) {
+  html {
+    font-size: 60.5%;
+  }
+}
+
+@media only screen and(max-width: 975px) {
+  .section-heading {
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+  }
+}
+
+@media only screen and(max-width: 992px) {
+  html {
+    font-size: 58.5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+
+  .section-heading {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+  }
+}

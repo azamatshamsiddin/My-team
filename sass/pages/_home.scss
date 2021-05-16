@@ -20,7 +20,7 @@
 
 .talent__text {
   margin-left: auto;
-  width: 44.5rem;
+  max-width: 44.5rem;
   font-weight: 600;
   font-size: 1.8rem;
   line-height: 2.8rem;
@@ -121,16 +121,9 @@
   }
 }
 
-
 // ********************************
 // ********SUCCESSES SECTION*******
 // ********************************
-.section-heading {
-  font-size: 4.8rem;
-  line-height: 4.8rem;
-  text-align: center;
-}
-
 .successes {
   padding: 14rem 0;
   background-color: $color-green-47;
@@ -202,24 +195,143 @@
   }
 }
 
-// ********************************
-// ********CONTACT-US SECTION******
-// ********************************
-.contact-us {
-  padding: 76px 0;
-  color: $color-green-34;
-  background-color: $color-coral;
-  background-image: url(../../images/home-page/contact-us-img.png);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left bottom -9rem;
+// *****************************
+// ********MEDIA QUERIES********
+// *****************************
+@media only screen and (max-width: 1320px) {
+  .talent {
+    background-image: none, url(../images/home-page/header-img-2.png);
+  }
+}
 
-  &__inner {
-    display: flex;
-    justify-content: space-around;
+@media only screen and(max-width: 1240px) {
+  .features {
+    background-position: right -10rem top;
+  }
+}
+
+@media only screen and(max-width: 1140px) {
+  .feedback-author {
+    flex-basis: 30rem;
+  }
+}
+
+@media only screen and(max-width: 1010px) {
+  .successes {
+    background-position: left top, right bottom -11rem;
+  }
+}
+
+
+@media only screen and(max-width: 975px) {
+  .talent-heading {
+    font-size: 9rem;
+    line-height: 9rem;
   }
 
-  &__heading {
-    text-align-last: left;
+  .features__heading {
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+    max-width: 44rem;
+  }
+}
+
+@media only screen and(max-width: 935px) {
+  .feedbacks {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .feedback-author {
+    max-width: 50rem;
+    margin-bottom: 2rem;
+
+    &__job {
+      margin-bottom: 2rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .talent {
+    background-position: bottom;
+  }
+
+  .talent-info {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 11rem;
+  }
+
+  .talent-heading {
+    font-size: 6.4rem;
+    line-height: 5.6rem;
+    max-width: 39rem;
+    margin: 0;
+    margin-bottom: 2.4rem;
+  }
+
+  .talent__text {
+    margin: 0 auto;
+    max-width: 55rem;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  // ****************
+  .features {
+    padding: 10rem 5.8rem;
+
+    &__heading {
+      font-size: 3.2rem;
+      line-height: 3.2rem;
+      margin-bottom: 6.4rem;
+    }
+  }
+
+  .features-info {
+    flex-direction: column;
+    padding-top: 3.2rem;
+  }
+
+  .feature-types {
+    margin-left: 9rem;
+  }
+
+  // ************************
+
+
+  .successes {
+    padding: 10rem 5.8rem;
+  }
+
+  .success-heading {
+    margin-bottom: 4.8rem;
+    max-width: 47rem;
+  }
+
+  .feedback-author {
+    max-width: 57rem;
+    margin-bottom: 0;
+
+    &__text {
+      width: 100%;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+    }
+
+    &__name {
+      margin-top: 1.6rem;
+      margin-bottom: 2px;
+    }
+
+    &__job {
+      margin-bottom: 1.6rem;
+    }
   }
 }

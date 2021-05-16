@@ -1,0 +1,23 @@
+
+// ********************************
+// ********CONTACT-US SECTION******
+// ********************************
+.contact-us {
+  padding: 76px 0;
+  color: $color-green-34;
+  background-color: $color-coral;
+  background-image: url(../../images/home-page/contact-us-img.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom -9rem;
+
+  &__inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &__heading {
+    text-align-last: left;
+  }
+}
