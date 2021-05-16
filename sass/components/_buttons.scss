@@ -9,10 +9,20 @@
   text-decoration: none;
   padding: 1rem 3.3rem;
   outline: none;
+  transition: all .3s ease-in-out;
+
+  &:hover{
+   background-color: $color-white; 
+   color: $color-green-29;
+  }
 
   &--dark {
     color: $color-green-34;
     border-color: $color-green-34;
+    &:hover{
+      background-color: $color-green-34; 
+      color: $color-white;
+     }
   }
 
   &--light{
