@@ -24,3 +24,32 @@
     }
   }
 }
+
+.burger {
+  &__input {
+    display: none;
+  }
+
+  &__menu {
+    display: inline-block;
+    width: 2rem;
+    height: 3px;
+    background-color: $color-white;
+    position: relative;
+
+    &::before {
+      top: -7px;
+    }
+
+    &::after {
+      top: 7px;
+    }
+
+    &::before,
+    &::after {
+      @include baElements(100%, 100%);
+      position: absolute;
+      background-color: $color-white;
+    }
+  }
+}
