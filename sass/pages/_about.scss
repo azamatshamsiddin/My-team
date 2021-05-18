@@ -21,7 +21,28 @@
       @include baElements(5rem, 0.4rem);
       background-color: $color-coral;
       margin-bottom: 4rem;
+
+      @media only screen and (max-width: 768px) {
+        display: none;
+
+      }
+
     }
+
+    @media only screen and(max-width: 975px) {
+      max-width: 62rem;
+    }
+
+    @media only screen and(max-width: 825px) {
+      max-width: 52rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+      max-width: 45rem;
+      margin: 0 auto;
+      font-size: 1.5rem;
+    }
+
   }
 }
 
@@ -29,12 +50,27 @@
   display: flex;
   justify-content: space-between;
   margin-top: 12rem;
+
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 11rem;
+  }
+
 }
 
 .about-heading {
   font-weight: bold;
   font-size: 6.4rem;
   line-height: 10rem;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 6.4rem;
+    line-height: 5.6rem;
+    margin-bottom: 2.4rem;
+  }
+
 }
 
 // **************************
@@ -70,55 +106,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-// ********MEDIA QUERIES********
-@media only screen and(max-width: 975px) {
-  .about__text {
-    max-width: 62rem;
-  }
-}
+  &__img {
+    @media only screen and(max-width: 825px) {
+      width: 13.5rem;
+      height: 3.5rem;
+    }
 
-@media only screen and(max-width: 935px) {
-  .clients-logo__img {
-    width: 15rem;
-    object-fit: contain;
-    height: 4rem;
-  }
-}
-
-@media only screen and(max-width: 825px) {
-  .about__text {
-    max-width: 52rem;
-  }
-
-  .clients-logo__img {
-    width: 13.5rem;
-    height: 3.5rem;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .about-info {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 11rem;
-  }
-
-  .about-heading {
-    font-size: 6.4rem;
-    line-height: 5.6rem;
-    margin-bottom: 2.4rem;
-  }
-
-  .about__text {
-    max-width: 45rem;
-    margin: 0 auto;
-    font-size: 1.5rem;
-
-    &::before {
-      display: none;
+    @media only screen and(max-width: 935px) {
+      width: 15rem;
+      object-fit: contain;
+      height: 4rem;
     }
   }
 }

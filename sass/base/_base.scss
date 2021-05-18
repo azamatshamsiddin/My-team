@@ -24,13 +24,17 @@ body {
 
 .container {
   max-width: 114rem;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding: 0 1.5rem;
-}
 
-@media only screen and(max-width: 1140px) {
-  .container {
+  @media only screen and(max-width: 1140px) {
     padding: 0 4rem;
+  }
+
+  @include respond(phone) {
+    max-width: 60rem;
+    padding: 0 2.5rem;
   }
 }

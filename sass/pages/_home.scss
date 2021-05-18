@@ -10,12 +10,31 @@
   background-size: 20rem 20rem, 35.8rem 10rem;
   background-position: left -10rem center, right 16.5rem bottom 0rem;
   background-repeat: no-repeat;
+
+  @media only screen and (max-width: 1320px) {
+    background-image: none, url(../images/home-page/header-img-2.png);
+  }
+
+  @media only screen and (max-width: 768px) {
+    background-position: bottom;
+  }
+
 }
 
 .talent-info {
   margin-top: 12.9rem;
   display: flex;
   align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 11rem;
+  }
+
+  @include respond(phone) {
+    margin-top: 8rem;
+  }
 }
 
 .talent__text {
@@ -28,10 +47,20 @@
   display: flex;
   flex-direction: column;
 
+  @media only screen and (max-width: 768px) {
+    margin: 0 auto;
+    max-width: 55rem;
+    font-size: 1.5rem;
+  }
+
   &::before {
     @include baElements(5rem, 0.4rem) {
       background-color: $color-light-blue;
       margin-bottom: 7.9rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: none;
     }
   }
 }
@@ -47,6 +76,14 @@
   background-image: url(../../images/home-page/feature-bg-img.png);
   background-repeat: no-repeat;
   background-position: right -10rem bottom;
+
+  @media only screen and(max-width: 1240px) {
+    background-position: right -10rem top;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 10rem 5.8rem;
+  }
 }
 
 .features-info {
@@ -62,6 +99,11 @@
     top: 0;
     left: 0;
   }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    padding-top: 3.2rem;
+  }
 }
 
 .features__heading {
@@ -69,12 +111,27 @@
   font-size: 4.8rem;
   line-height: 4.8rem;
   max-width: 44.5rem;
+
+  @media only screen and(max-width: 975px) {
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+    max-width: 44rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 3.2rem;
+    line-height: 3.2rem;
+    margin-bottom: 6.4rem;
+  }
 }
 
 .feature-types {
   display: flex;
   flex-direction: column;
 
+  @media only screen and (max-width: 768px) {
+    margin-left: 9rem;
+  }
 }
 
 .feature-type {
@@ -130,12 +187,25 @@
   background-image: url(../../images/home-page/success-bg-img1.png), url(../../images/home-page/success-bg-img2.png);
   background-repeat: no-repeat;
   background-position: left top, right bottom -10rem;
+
+  @media only screen and(max-width: 1010px) {
+    background-position: left top, right bottom -11rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 10rem 5.8rem;
+  }
 }
 
 .success-heading {
   max-width: 93.2rem;
   margin: 0 auto;
   margin-bottom: 5.6rem;
+
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 4.8rem;
+    max-width: 47rem;
+  }
 
   &__text {
     color: $color-light-blue;
@@ -146,6 +216,14 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  @media only screen and(max-width: 935px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .feedback-author {
@@ -153,6 +231,20 @@
   flex-basis: 35rem;
   display: flex;
   flex-direction: column;
+
+  @media only screen and(max-width: 1140px) {
+    flex-basis: 30rem;
+  }
+
+  @media only screen and(max-width: 935px) {
+    max-width: 50rem;
+    margin-bottom: 2rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    max-width: 57rem;
+    margin-bottom: 0;
+  }
 
   &::before {
     @include baElements(6.7rem, 5.6rem);
@@ -162,12 +254,17 @@
     margin: 0 auto;
   }
 
-
   &__text {
     font-weight: 600;
     font-size: 1.5rem;
     line-height: 2.5rem;
     margin-top: -2rem;
+
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      font-size: 1.5rem;
+      line-height: 2.5rem;
+    }
   }
 
   &__name {
@@ -177,6 +274,11 @@
     color: $color-light-blue;
     margin-top: 2.4rem;
     margin-bottom: 2px;
+
+    @media only screen and (max-width: 768px) {
+      margin-top: 1.6rem;
+      margin-bottom: 2px;
+    }
   }
 
   &__job {
@@ -185,6 +287,14 @@
     font-size: 1.3rem;
     line-height: 1.8rem;
     margin-bottom: 3.2rem;
+
+    @media only screen and(max-width: 935px) {
+      margin-bottom: 2rem;
+    }
+
+    @media only screen and (max-width: 768px) {
+      margin-bottom: 1.6rem;
+    }
   }
 
   &__img {
@@ -192,146 +302,5 @@
     height: 6.2rem;
     object-fit: contain;
     margin: 0 auto;
-  }
-}
-
-// *****************************
-// ********MEDIA QUERIES********
-// *****************************
-@media only screen and (max-width: 1320px) {
-  .talent {
-    background-image: none, url(../images/home-page/header-img-2.png);
-  }
-}
-
-@media only screen and(max-width: 1240px) {
-  .features {
-    background-position: right -10rem top;
-  }
-}
-
-@media only screen and(max-width: 1140px) {
-  .feedback-author {
-    flex-basis: 30rem;
-  }
-}
-
-@media only screen and(max-width: 1010px) {
-  .successes {
-    background-position: left top, right bottom -11rem;
-  }
-}
-
-
-@media only screen and(max-width: 975px) {
-  .talent-heading {
-    font-size: 9rem;
-    line-height: 9rem;
-  }
-
-  .features__heading {
-    font-size: 4.2rem;
-    line-height: 4.2rem;
-    max-width: 44rem;
-  }
-}
-
-@media only screen and(max-width: 935px) {
-  .feedbacks {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .feedback-author {
-    max-width: 50rem;
-    margin-bottom: 2rem;
-
-    &__job {
-      margin-bottom: 2rem;
-    }
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  .talent {
-    background-position: bottom;
-  }
-
-  .talent-info {
-    flex-direction: column;
-    text-align: center;
-    margin-top: 11rem;
-  }
-
-  .talent-heading {
-    font-size: 6.4rem;
-    line-height: 5.6rem;
-    max-width: 39rem;
-    margin: 0;
-    margin-bottom: 2.4rem;
-  }
-
-  .talent__text {
-    margin: 0 auto;
-    max-width: 55rem;
-
-    &::before {
-      display: none;
-    }
-  }
-
-  // ****************
-  .features {
-    padding: 10rem 5.8rem;
-
-    &__heading {
-      font-size: 3.2rem;
-      line-height: 3.2rem;
-      margin-bottom: 6.4rem;
-    }
-  }
-
-  .features-info {
-    flex-direction: column;
-    padding-top: 3.2rem;
-  }
-
-  .feature-types {
-    margin-left: 9rem;
-  }
-
-  // ************************
-
-
-  .successes {
-    padding: 10rem 5.8rem;
-  }
-
-  .success-heading {
-    margin-bottom: 4.8rem;
-    max-width: 47rem;
-  }
-
-  .feedback-author {
-    max-width: 57rem;
-    margin-bottom: 0;
-
-    &__text {
-      width: 100%;
-      font-size: 1.5rem;
-      line-height: 2.5rem;
-    }
-
-    &__name {
-      margin-top: 1.6rem;
-      margin-bottom: 2px;
-    }
-
-    &__job {
-      margin-bottom: 1.6rem;
-    }
   }
 }

@@ -51,6 +51,18 @@
 
 html {
   font-size: 62.5%; // 16px * 62.5% = 10px
+
+  @media only screen and(max-width: 1010px) {
+    font-size: 60.5%;
+  }
+
+  @media only screen and(max-width: 992px) {
+    font-size: 58.5%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 62.5%;
+  }
 }
 
 .talent-heading {
@@ -58,7 +70,27 @@ html {
   font-size: 10rem;
   line-height: 10rem;
   color: $color-white;
-  width: 61rem;
+  max-width: 61rem;
+
+  @media only screen and(max-width: 975px) {
+    font-size: 9rem;
+    line-height: 9rem;
+    margin: 0 auto;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 6.4rem;
+    line-height: 5.6rem;
+    max-width: 39rem;
+    margin-bottom: 2.4rem;
+  }
+
+  @include respond(phone) {
+    font-size: 4rem;
+    line-height: 4rem;
+    max-width: 24rem;
+    margin-bottom: 1.8rem;
+  }
 
   &__text {
     color: $color-coral;
@@ -69,33 +101,13 @@ html {
   font-size: 4.8rem;
   line-height: 4.8rem;
   text-align: center;
-}
 
-@media only screen and(max-width: 1010px) {
-  html {
-    font-size: 60.5%;
-  }
-}
-
-@media only screen and(max-width: 975px) {
-  .section-heading {
+  @media only screen and(max-width: 975px) {
     font-size: 4.2rem;
     line-height: 4.2rem;
   }
-}
 
-@media only screen and(max-width: 992px) {
-  html {
-    font-size: 58.5%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  html {
-    font-size: 62.5%;
-  }
-
-  .section-heading {
+  @media only screen and (max-width: 768px) {
     font-size: 3.2rem;
     line-height: 3.2rem;
   }

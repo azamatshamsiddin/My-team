@@ -11,4 +11,16 @@
       }
     }
   }
+
+  &-nav {
+    @include respond(phone) {
+      display: none;
+    }
+
+    &__btn {
+      @include respond(phone) {
+        display: none;
+      }
+    }
+  }
 }
