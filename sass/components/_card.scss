@@ -17,6 +17,10 @@
   flex-basis: 35rem;
   min-height: 25.3rem;
 
+  @include respond(phone) {
+    margin-bottom: 5.2rem;
+  }
+
 
   &__img {
     object-fit: contain;

@@ -5,6 +5,10 @@
   &-list {
     margin-left: 8rem;
 
+    @media only screen and (max-width: 635px) {
+      margin-left: 5rem;
+    }
+
     &__item {
       &:not(:last-child) {
         margin-right: 4rem;
@@ -28,6 +32,11 @@
 
 .burger {
   cursor: pointer;
+  display: none;
+
+  @include respond(phone) {
+    display: block;
+  }
 
   &__input {
     display: none;

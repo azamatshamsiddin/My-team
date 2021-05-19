@@ -20,7 +20,7 @@
   }
 
   @include respond(phone) {
-    padding-bottom: 19rem;
+    padding: 4.8rem 0 19rem 0;
   }
 
 }
@@ -214,6 +214,10 @@
   @media only screen and (max-width: 768px) {
     padding: 10rem 5.8rem;
   }
+
+  @include respond(phone) {
+    padding: 14rem 0;
+  }
 }
 
 .success-heading {
@@ -265,6 +269,12 @@
   @media only screen and (max-width: 768px) {
     max-width: 57rem;
     margin-bottom: 0;
+  }
+
+  @include respond(phone) {
+    &:not(:last-child) {
+      margin-bottom: 4.8rem;
+    }
   }
 
   &::before {

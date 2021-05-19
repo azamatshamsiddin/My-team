@@ -1,23 +1,35 @@
-
 // ********************************
 // ********CONTACT-US SECTION******
 // ********************************
 .contact-us {
-  padding: 76px 0;
+  padding: 7.6rem 0;
   color: $color-green-34;
   background-color: $color-coral;
   background-image: url(../../images/home-page/contact-us-img.png);
   background-repeat: no-repeat;
-  background-size: contain;
-  background-position: left bottom -9rem;
+  background-size: 20rem 24.4rem;
+  background-position: left bottom -12rem;
+
+  @include respond(phone) {
+    padding: 8.3rem 0;
+  }
 
   &__inner {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
   }
 
   &__heading {
-    text-align-last: left;
+    text-align: left;
+
+    @include respond(phone) {
+      text-align: center;
+      margin-bottom: 2.4rem;
+    }
   }
 }
