@@ -16,7 +16,7 @@
   }
 
   @media only screen and (max-width: 768px) {
-    background-position: bottom;
+    background-position: none, center bottom;
   }
 
   @include respond(phone) {
