@@ -929,6 +929,10 @@ html {
   }
 }
 
+.burger {
+  cursor: pointer;
+}
+
 .burger__input {
   display: none;
 }
@@ -1249,6 +1253,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .talent {
+    padding-bottom: 19rem;
+  }
+}
+
 .talent-info {
   margin-top: 12.9rem;
   display: flex;
@@ -1323,6 +1333,12 @@ html {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .features {
+    padding: 6.4rem 0;
+  }
+}
+
 .features-info {
   display: flex;
   justify-content: space-between;
@@ -1371,18 +1387,23 @@ html {
   }
 }
 
+@media only screen and (max-width: 37.5em) {
+  .features__heading {
+    max-width: 24rem;
+    margin-bottom: 5.6rem;
+  }
+}
+
 .feature-types {
   display: flex;
   flex-direction: column;
 }
 
-@media only screen and (max-width: 768px) {
-  .feature-types {
-    margin-left: 9rem;
-  }
+.feature-type {
+  display: flex;
 }
 
-.feature-type {
+.feature-type__info {
   max-width: 44.5rem;
 }
 
@@ -1390,27 +1411,22 @@ html {
   margin-bottom: 3.2rem;
 }
 
-.feature-type::before {
-  content: "";
+@media only screen and (max-width: 37.5em) {
+  .feature-type:not(:last-child) {
+    margin-bottom: 4.8rem;
+  }
+}
+
+.feature-type__img {
   display: inline-block;
-  width: 7.2rem;
-  height: 7.2rem;
-  background-repeat: no-repeat;
-  background-size: contain;
-  position: absolute;
-  margin-left: -9.5rem;
+  margin-right: 2.3rem;
 }
 
-.feature-type:nth-child(1)::before {
-  background-image: url(../../images/feature-img-1.svg);
-}
-
-.feature-type:nth-child(2)::before {
-  background-image: url(../../images/feature-img-2.svg);
-}
-
-.feature-type:nth-child(3)::before {
-  background-image: url(../../images/feature-img-3.svg);
+@media only screen and (max-width: 37.5em) {
+  .feature-type__img {
+    margin-right: 0;
+    margin-bottom: 1.6rem;
+  }
 }
 
 .feature-type__heading {
@@ -1427,6 +1443,21 @@ html {
   color: #fff;
   opacity: .8;
   margin-top: 1.6rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .feature-type__text {
+    margin-top: 8px;
+  }
+}
+
+@media only screen and (max-width: 37.5em) {
+  .feature-type {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
 }
 
 .successes {

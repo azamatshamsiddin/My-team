@@ -25,7 +25,10 @@
   }
 }
 
+
 .burger {
+  cursor: pointer;
+
   &__input {
     display: none;
   }
