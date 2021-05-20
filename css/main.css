@@ -1000,12 +1000,7 @@ html {
 .burger {
   cursor: pointer;
   display: none;
-}
-
-@media only screen and (max-width: 37.5em) {
-  .burger {
-    display: block;
-  }
+  z-index: 9999;
 }
 
 .burger__input {
@@ -1035,6 +1030,73 @@ html {
   height: 100%;
   position: absolute;
   background-color: #fff;
+}
+
+.modal {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 9000;
+}
+
+.modal__body {
+  display: block;
+  padding: 11.2rem 4.8rem 0;
+  max-width: 25.5rem;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #2C6269;
+  background-image: url(../../images/about-page/about-bg-img.png);
+  background-repeat: no-repeat;
+  background-position: right -10rem bottom;
+}
+
+.modal__btn {
+  margin-top: 3.6rem;
+}
+
+.modal-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.modal-list__item {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.modal-list__item:not(:last-child) {
+  margin-bottom: 2.4rem;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .burger {
+    display: block;
+  }
+  .burger__input:checked + .burger .burger__menu {
+    visibility: hidden;
+  }
+  .burger__input:checked + .burger .burger__menu::before, .burger__input:checked + .burger .burger__menu::after {
+    visibility: visible;
+    top: 0;
+    transition: all .3s ease;
+  }
+  .burger__input:checked + .burger .burger__menu::before {
+    transform: rotate(135deg);
+  }
+  .burger__input:checked + .burger .burger__menu::after {
+    transform: rotate(-135deg);
+  }
+  .burger__input:checked ~ .modal {
+    display: block;
+  }
 }
 
 .list {
@@ -1415,7 +1477,7 @@ html {
 
 @media only screen and (max-width: 768px) {
   .talent {
-    background-position: bottom;
+    background-position: left, center bottom;
   }
 }
 
